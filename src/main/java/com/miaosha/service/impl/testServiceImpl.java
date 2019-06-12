@@ -17,9 +17,7 @@ public  class testServiceImpl implements testService {
 
     @Override
     public Usert getAll(String id) {
-        System.out.print("getAllsss");
         Usert userDao = this.UserDaoMapper.selectByPrimaryKey(id);
-        System.out.print("为什么不出");
         return userDao;
     }
 
